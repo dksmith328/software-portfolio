@@ -1,0 +1,264 @@
+* {
+  	box-sizing: border-box;
+  	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  	font-size: 16px;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+body {
+  	margin: 0;
+}
+.container {
+  padding: 20px 0;
+}
+
+
+
+/*---------------  NAVBAR------------------------  */
+
+.navtop {
+  	background-color: #2c2c54;
+  	width: 100%;
+  	border: 0;
+}
+.navtop div {
+  	display: flex;
+  	margin: 0 auto;
+    padding: 0 20%;
+}
+.navtop div h1, .navtop div a {
+  	display: inline-flex;
+  	align-items: center;
+    font-size: 24px;
+    color: #f5eae1;
+  	font-weight: bold;
+    text-transform: uppercase;
+}
+.navtop div a {
+  	padding: 0 20px;
+  	text-decoration: none;
+}
+.navtop div a:hover, .navtop div h1:hover {
+  	color: #d1ccc0;
+}
+
+/*---------------- HEADER ----------------------------- */
+
+header .container {
+  background-color: #ffb142;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+header img {
+  max-width: 240px;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid white;
+}
+
+.intro-text h1 {
+  font-size: 36px;
+  color: #f5eae1;
+  text-transform: uppercase;
+  margin: 10px auto;
+}
+
+.intro-text h2 {
+  font-size: 24px;
+  color: #f5eae1;
+  margin: 0 auto;
+}
+
+hr {
+    margin: 15px auto 25px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 4px white;
+}
+
+/*--------------------ABOUT------------------*/
+.about-me {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 50px 20%;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.about-me h1 {
+  font-size: 36px;
+  color: #2c2c54;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: inline-block;
+}
+.about-me h2 {
+  font-size: 24px;
+  color: #2c2c54;
+  margin: 0 auto;
+  font-weight: lighter;
+}
+.about-me hr {
+  margin: 15px auto 25px;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 4px #2c2c54;
+}
+.about-me .column {
+  width: 50%;
+  float: left;
+  padding: 0 10px;
+  text-align: left;
+}
+ul.about-list  {
+  list-style-type: square;
+  margin: 0;
+}
+li {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #2c2c54;
+}
+
+/*------------------PROJECTS-------------------*/
+
+.projects {
+  background-color: #ffb142;
+  width: 100%;
+  text-align: center;
+  padding: 50px 20%;
+}
+.projects h1 {
+  font-size: 36px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: inline-block;
+}
+.projects h2 {
+  font-size: 24px;
+  color: white;
+  margin: 0 auto;
+  font-weight: lighter;
+}
+.projects hr {
+  margin: 15px auto 25px;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 4px white;
+}
+.projects .column {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+.projects img {
+  max-width: 98%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 5px 10px 15px #2c2c54;
+}
+.projects img:hover {
+  opacity: 0.7;
+}
+
+ul.project-list  {
+  list-style-type: none;
+  margin: 0;
+}
+.project-list h1 {
+  font-size: 24px;
+}
+.project-list h2 {
+  padding-left: 10px;
+}
+.fab, .fas {
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+}
+.fab:hover, .fas:hover {
+  color: #2c2c54;
+}
+/*------------------CONTACT ------------------*/
+
+.contact-me {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 50px 20%;
+}
+.contact-me h1 {
+  font-size: 36px;
+  color: #2c2c54;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: inline-block;
+}
+.contact-me h2 {
+  font-size: 24px;
+  color: #2c2c54;
+  margin: 0 auto;
+  font-weight: lighter;
+}
+.contact-me hr {
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 4px #2c2c54;
+}
+.contact-me form {
+  display: block;
+}
+.form-control {
+  width: 50%;
+  padding: 20px 20px;
+  margin: 10px 0;
+  border: 0;
+  box-shadow: 1px 1px 5px #888888;
+}
+.contact-me button {
+  width: 50%;
+  padding: 10px 0;
+  border: 0;
+  background-color: #2c2c54;
+  color: white;
+  text-transform: uppercase;
+}
+.contact-me .column {
+  width: 50%;
+  float: left;
+
+}
+
+/*---------------  NAVBAR------------------------  */
+
+.navbottom {
+  	background-color: #2c2c54;
+  	width: 100%;
+  	border: 0;
+    vertical-align: middle;
+}
+.navbottom div {
+  	display: flex;
+}
+.navbottom div h2 {
+  font-size: 18px;
+  color: white;
+  margin: 0 auto;
+  font-weight: lighter;
+  padding: 10px;
+}

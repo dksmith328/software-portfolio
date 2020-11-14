@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<title>{% block title %}Daniel Smith{% endblock %}</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  </head>
+  <body>
+		<header>
+		<nav class="navtop">
+			<div>
+				<a href="" style="flex: 1;"><h1>Daniel Smith</h1></a>
+				<a href="#about-me">About Me</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact-me">Contact</a>
+			</div>
+		</nav>
+		<div class="container">
+			<image src="{{ url_for('static', filename='images/face.png')}}" />
+			<div class="intro-text">
+				<h1>Daniel Smith</h1>
+				<hr>
+				<h2>Software Engineer in Lakewood, CO</h2>
+				<a href="https://github.com/dksmith328/" target="_blank" ><i class="fab fa-github"></i></a>
+			</div>
+		</div>
+		</header>
+		<section>
+				<div class="about-me clearfix" id="about-me">
+					<h1>About Me</h1>
+					<hr/>
+					<div class="column">
+						<h1 style="font-size: 24px; text-decoration: underline;">Technologies</h1>
+						<ul class="about-list">
+							<li>Python</li>
+							<li>Flask (Python framework)</li>
+							<li>SQL</li>
+							<li>C++</li>
+							<li>HTML/CSS</li>
+							<li>JavaScript</li>
+							<li>Unix</li>
+							<li>Git</li>
+						</ul>
+					</div>
+					<div class="column">
+						<h2>I am a skilled full stack software engineer with a passion for creating the most secure software using industry best practices. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences. With my wide skill set, I am able to build secure software with clean and elegant interface.</h2>
+					</div>
+				</div>
+				<div class="projects clearfix" id="projects">
+				<h1>Projects</h1>
+					<hr/>
+					<div class="container clearfix">
+						<div class="column">
+									<a href="https://portfolio-recipe-app.herokuapp.com/" target="_blank" ><image src="{{ url_for('static', filename='images/our-recipe.png')}}" /></a>
+						</div>
+						<div class="column">
+							<ul class="project-list">
+								<li><h1>Name:</h1><h2>OurRecipe</h2></li>
+								<li><h1>Description:</h1><h2>Simple recipe app that allows users to sign in and create a personal recipe database.</h2></li>
+								<li><h1>Technologies used:</h1><h2>Flask, SQL(clearDB), HTML, CSS, JavaScript, Git, Heroku</h2></li>
+								<a href="https://github.com/dksmith328/recipe_app" target="_blank" ><i class="fab fa-github"></i></a>
+								<a href="https://portfolio-recipe-app.herokuapp.com/" target="_blank" ><i class="fas fa-rocket"></i></a>
+							</ul>
+						</div>
+					</div>
+
+
+				</div>
+				<div class="contact-me" id="contact-me">
+				<h1>Contact Me</h1>
+					<hr/>
+					<form action="mailto:dksmith328@gmail.com" method="POST" enctype=”multipart/form-data” name=”EmailForm”>
+						<input type="text" class="form-control" id="name" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false" />
+						<input type="email" class="form-control" name="email" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your email address." />
+						<textarea rows="5" class="form-control" name="message" placeholder="Message" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+						<button type="submit" class="btn">Send</button>
+					</form>
+				</div>
+		</section>
+		<footer>
+		<nav class="navbottom">
+			<div>
+				<h2>Copyright &copy; Daniel Smith 2020</h2>
+			</div>
+		</nav>
+	</footer>
+		<div>
+			{% block content %}{% endblock %}
+		</div>
+
+	</body>
+</html>
