@@ -26,13 +26,19 @@ body {
   	margin: 0 auto;
     padding: 0 20%;
 }
-.navtop div h1, .navtop div a {
+.navtop div h1, .navtop div a, #links div a{
   	display: inline-flex;
   	align-items: center;
     font-size: 24px;
     color: #f5eae1;
   	font-weight: bold;
     text-transform: uppercase;
+}
+.navtop #links {
+  padding-right: 0;
+}
+.navtop .icon  {
+  display: none;
 }
 .navtop div a {
   	padding: 0 20px;
@@ -45,7 +51,7 @@ body {
 /*---------------- HEADER ----------------------------- */
 
 header .container {
-  background-color: #ffb142;
+  background-color: #929196;
   width: 100%;
   text-align: center;
   padding: 50px 0;
@@ -56,6 +62,7 @@ header img {
   display: block;
   margin: 0 auto;
   border: 5px solid white;
+  border-radius: 50%; 
 }
 
 .intro-text h1 {
@@ -135,7 +142,7 @@ li {
 /*------------------PROJECTS-------------------*/
 
 .projects {
-  background-color: #ffb142;
+  background-color: #929196;
   width: 100%;
   text-align: center;
   padding: 50px 20%;
@@ -261,4 +268,66 @@ ul.project-list  {
   margin: 0 auto;
   font-weight: lighter;
   padding: 10px;
+}
+
+/*---------------- RESPONSIVE -------------------*/
+@media only screen and (max-width:801px){
+  .navtop div a {
+    padding: 0;
+  }
+  .navtop div a {
+  color: white;
+  padding: 2px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  }
+  .navtop #links {
+    display: none;
+  }
+  .navtop .icon {
+    display: inline-flex;
+  }
+  .navtop .icon:hover {
+    color: #929196;
+  }
+  .about-me .column {
+    width: 100%;
+  }
+  .about-me h2 {
+    padding-top: 10px;
+  }
+  .projects .column {
+    width: 100%;
+  }
+  ul.project-list {
+    padding-top: 20px;
+  }
+  .contact-me {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width:1200px){
+  .navtop div a {
+    padding: 0;
+  }
+  .navtop div a {
+  color: white;
+  padding: 2px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  }
+  .navtop #links {
+    display: none;
+  }
+  .navtop .icon {
+    display: inline-flex;
+  }
+  .navtop .icon:hover {
+    color: #929196;
+  }
+  .contact-me {
+    padding: 50px 0;
+  }
 }

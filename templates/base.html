@@ -4,15 +4,35 @@
 	<title>{% block title %}Daniel Smith{% endblock %}</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<script>
+	/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+	function myFunction() {
+	  var x = document.getElementById("links");
+	  if (x.style.display === "block") {
+	    x.style.display = "none";
+	  } else {
+	    x.style.display = "block";
+	  }
+	}
+	</script>
   </head>
   <body>
 		<header>
 		<nav class="navtop">
 			<div>
 				<a href="" style="flex: 1;"><h1>Daniel Smith</h1></a>
-				<a href="#about-me">About Me</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact-me">Contact</a>
+				<div id="links">
+					<a href="#about-me">About Me</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact-me">Contact</a>
+				</div>
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
+  		</a>
 			</div>
 		</nav>
 
