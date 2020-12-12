@@ -204,9 +204,10 @@ ul.project-list  {
 
 .contact-me {
   background-color: white;
-  width: 100%;
+  width: 50%;
   text-align: center;
-  padding: 50px 20%;
+  padding: 50px 0;
+  margin-left: 25%;
 }
 .contact-me h1 {
   font-size: 36px;
@@ -251,6 +252,32 @@ ul.project-list  {
 
 }
 
+.contact h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.contact {
+  width: 25%;
+  float: left;
+}
+.contact .fab, .contact .fas {
+  font-size: 30px;
+  color: white;
+  background: #2c2c54;
+  padding: 30px;
+  border-radius: 50%;
+  display:block;
+  width:100px;
+  height:100px;
+  margin-left: 29%;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.contact .fab:hover, .contact .fas:hover {
+  color: #929196;
+  text-decoration: none;
+}
 /*---------------  NAVBAR------------------------  */
 
 .navbottom {
@@ -306,6 +333,27 @@ ul.project-list  {
   .contact-me {
     padding: 50px 0;
   }
+  .contact .fab, .contact .fas {
+    margin-left: 29%;
+  }
+}
+@media only screen and (max-width:1366px){
+  .navtop div h1, .navtop div a, #links div a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width:1024px){
+  .contact .fab, .contact .fas {
+    margin-left: 40%;
+  }
+}
+@media only screen and (max-width:540px){
+  .navtop div {
+    padding: 0;
+  }
+  .contact .fab, .contact .fas {
+    margin-left: 32%;
+  }
 }
 @media only screen and (max-width:1200px){
   .navtop div a {
@@ -330,6 +378,9 @@ ul.project-list  {
   .contact-me {
     padding: 50px 0;
   }
+  .contact  {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 414px) {
   .about-me .column {
@@ -343,4 +394,7 @@ ul.project-list  {
   .form-control {
     width: 75%;
   }
+  .contact .fab, .contact .fas {
+    margin-left: 25%;
+}
 }
