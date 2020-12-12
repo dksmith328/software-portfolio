@@ -298,7 +298,44 @@ ul.project-list  {
 }
 
 /*---------------- RESPONSIVE -------------------*/
-@media only screen and (max-width:801px){
+@media only screen and (max-width:1366px){
+  .navtop div h1, .navtop div a, #links div a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width:1200px){
+  .navtop div a {
+    padding: 0;
+  }
+  .navtop div a {
+  color: white;
+  padding: 2px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  }
+  .navtop #links {
+    display: none;
+  }
+  .navtop .icon {
+    display: inline-flex;
+  }
+  .navtop .icon:hover {
+    color: #929196;
+  }
+  .contact-me {
+    padding: 50px 0;
+  }
+  .contact .fab, .contact .fas {
+    margin-left: 16%;
+  }
+}
+@media only screen and (max-width:1024px){
+  .contact .fab, .contact .fas {
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width:800px){
   .navtop div a {
     padding: 0;
   }
@@ -334,17 +371,10 @@ ul.project-list  {
     padding: 50px 0;
   }
   .contact .fab, .contact .fas {
-    margin-left: 29%;
+    margin-left: 37%;
   }
-}
-@media only screen and (max-width:1366px){
-  .navtop div h1, .navtop div a, #links div a {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width:1024px){
-  .contact .fab, .contact .fas {
-    margin-left: 40%;
+  .contact {
+    width: 100%;
   }
 }
 @media only screen and (max-width:540px){
@@ -355,33 +385,7 @@ ul.project-list  {
     margin-left: 32%;
   }
 }
-@media only screen and (max-width:1200px){
-  .navtop div a {
-    padding: 0;
-  }
-  .navtop div a {
-  color: white;
-  padding: 2px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  }
-  .navtop #links {
-    display: none;
-  }
-  .navtop .icon {
-    display: inline-flex;
-  }
-  .navtop .icon:hover {
-    color: #929196;
-  }
-  .contact-me {
-    padding: 50px 0;
-  }
-  .contact  {
-    width: 100%;
-  }
-}
+
 @media only screen and (max-width: 414px) {
   .about-me .column {
     width: 120%;
