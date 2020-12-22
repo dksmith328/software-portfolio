@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>{% block title %}Daniel Smith{% endblock %}</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+	<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 	<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
